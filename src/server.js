@@ -12,8 +12,6 @@ app.use(express.json());
 const TELEGRAM_TOKEN = process.env.TELEGRAM_TOKEN;
 const CHAT_ID = process.env.CHAT_ID;
 const PORT = process.env.PORT || 5000;
-console.log("TELEGRAM_TOKEN:", TELEGRAM_TOKEN);
-console.log("CHAT_ID:", CHAT_ID);
 
 app.post("/api/contact", async (req, res) => {
   const { name, email, message } = req.body;
